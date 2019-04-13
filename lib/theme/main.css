@@ -1,0 +1,108 @@
+/*
+-------------------------- ANOTAÇÕES --------------------------
+Objetos do sistema z-index = 3000
+
+*/
+
+body {
+    background-color: #eee;
+}
+.bar_effect {
+    position: fixed;
+    width: 100%; height: 1px;
+    background-color: #eee;
+    top: 50px;
+    z-index: 3000;
+}
+    .bar_effect .intro {
+        width: 200px; height: 1px;
+        /*background: linear-gradient( to right, transparent, #007bff, transparent); */
+    }
+#content {
+    position: absolute;
+    width: calc(100% - 340px);
+    height: calc(100% - 100px);
+    top: 100px; right: 0;
+}
+header#sys_header {
+    position: fixed;
+    width: 100%; height: 50px;
+    background-color: white;
+    top: 0; left: 0;
+    z-index: 3000;
+}
+.icon_main {
+    float: left;
+    width: 50px;height: 50px; cursor: pointer;
+}
+    .icon_main:hover #bar_2 {
+        transform: translateX(5px);
+    }
+    .icon_main:hover #bar_1, .icon_main:hover #bar_2, .icon_main:hover #bar_3 {
+        transition: linear 0.3s;
+        fill: #007bff;
+    }
+.icon_logout {
+    float: right;
+    width: 50px; height: 50px;
+    cursor: pointer;
+}
+    .icon_logout:hover, .icon_logout:active {
+        transition: linear .3s;
+        background-color: #007bff;
+    }
+    .icon_logout:hover .st01 {
+        stroke: #FFF;
+    }
+.input-search {
+    float: right;
+    width: 260px; height: 25px;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-top: 12.5px; margin-right: 20px;
+    padding-left: 7px; color: #aaa;
+    outline: none;
+}
+    .input-search:focus {
+        border-color: #007bff;
+        background-color: white;
+        color: black;
+    }
+#main {
+    position: fixed;
+    width: 300px; height: calc(100% - 150px);
+    top: 100px; left: 20px;
+    background-color: white;
+    border:solid 1px rgba(0,0,0,0.1);
+    border-radius: 7px;
+}
+.name_user {
+    width: auto; height: 25px;
+    float: left;
+    color: black;
+    margin-left: 30px;
+    margin-top: 12.5px;
+    padding-right: 10px;
+    border-right: solid 1px #ddd;
+}
+#sub_main {
+    position: fixed;
+    width: 100%; height: 35px;
+    background-color: white;
+    top: 51px;
+    z-index: 3000;
+}
+
+.window {
+    width: 400px; height: 300px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+.window-header {
+    width: 100%; height: 40px;
+    border-bottom: solid 1px #eee;
+    line-height: 40px; 
+    padding-left: 10px; padding-right: 10px;
+}

@@ -14,7 +14,7 @@ include_once ("router.php");
 
 if( !isset( $_SESSION[USR_LOGIN] ) )
 {
-    $class = "System\\Controller\\Login";
+    $class = "System\\Controller\\Home";
 }
 
 $var = new $class;

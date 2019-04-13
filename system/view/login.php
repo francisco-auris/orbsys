@@ -4,16 +4,19 @@
         <span class="ml-3"><b>EMPRESA NEW TECHNOLOGY</b></span>
         <hr>
 
-        <form>
+        <form method="post">
 
             <label>Usuário:</label>
             <input type="text" class="form-control" placeholder="usuario"> 
 
             <label>Senha:</label>
-            <input type="text" class="form-control" placeholder="usuario"> 
+            <input type="password" class="form-control" placeholder="senha"> 
 
             <label>Conectar:</label>
-            <input type="text" class="form-control" placeholder="usuario"> 
+            <select class="form-control">
+                <option value=""> -- Selecione --</option>
+                <option value="">MATRIZ</option>
+            </select> 
 
             <button class="btn btn-primary mt-4">Entrar</button>
             <br>
