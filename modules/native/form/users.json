@@ -1,0 +1,64 @@
+{
+    "setting" : {
+        "title" : "Usuários",
+        "table" : "NUSR"
+    },
+    "action" : {
+        "printer" : "url_da_impressao",
+        "copy" : true
+    },
+    "form" : [
+        {
+            "objeto" : "input",
+            "type" : "text",
+            "scolumn" : 6,
+            "name" : "card_name",
+            "dbase" : "cname"
+        },
+        {
+            "objeto" : "select",
+            "scolumn" : 4,
+            "name" : "opt_nivel",
+            "dbase" : "nivel",
+            "dataQuery" : null,
+            "options" : [
+                {"title":"Primeira opcao", "value":"primeira_opcao"},
+                {"title":"Segunda opcap", "value":"segunda_opcao"}
+            ]
+        },
+        {
+            "objeto" : "select",
+            "scolumn" : 6,
+            "name" : "opt_teste",
+            "dbase" : "opt_teste",
+            "dataQuery" : {
+                "col" : "title/valor", "query" : "SELECT * FROM NUSR WHERE status_system <> 0"
+            },
+            "options" : null
+        },
+        {
+            "objeto" : "table",
+            "type" : "view",
+            "scolumn" : 12,
+            "name" : "table_lista_users",
+            "dataQuery" : "SELECT * FROM NUSR WHERE status_system <> 0"
+        },
+        {
+            "objeto" : "table",
+            "type" : "write",
+            "scolumn" : 12,
+            "name" : "table_write_users",
+            "titles" : ["Id","Nome","Nivel","Ativo"],
+            "cols" : [
+
+                {
+                    "objeto" : "input",
+                    "type" : "number",
+                    "name" : "id_table_line",
+                    "dbase" : "id_user"
+                }
+
+            ]
+        }
+    ]
+}

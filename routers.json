@@ -1,0 +1,7 @@
+{
+    "system" : ["Login","Inicio"],
+    "modules" : {
+        "native" : ["Usuario","Permissao","Email"]
+    }
+
+}

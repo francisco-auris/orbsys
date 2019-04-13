@@ -1,15 +1,29 @@
 <div class="box-login">
-    <div class="form-input">
-        <label>Usuário:</label>
-        <input type="text" maxlength="50" class="form-control form-control-sm" placeholder="usuário" />
-        <label>Senha:</label>
-        <input type="password" class="form-control form-control-sm" placeholder="Digite sua senha"/>
-        <label>Conectar:</label>
-        <select class="form-control form-control-sm">
-            <option>-- developer</option>
-        </select>
+    <div class="d-block">
+        <img src="<?= BASEURI ?>/img/logo_main.svg" width="60">
+        <span class="ml-3"><b>EMPRESA NEW TECHNOLOGY</b></span>
+        <hr>
 
-        <button class="btn btn-dark btn-sm mt-3">Entrar</button>
+        <form>
+
+            <label>Usuário:</label>
+            <input type="text" class="form-control" placeholder="usuario"> 
+
+            <label>Senha:</label>
+            <input type="text" class="form-control" placeholder="usuario"> 
+
+            <label>Conectar:</label>
+            <input type="text" class="form-control" placeholder="usuario"> 
+
+            <button class="btn btn-primary mt-4">Entrar</button>
+            <br>
+
+            <input type="checkbox" class="mt-4 mr-2"><label>Lembrar-me usuário</label>
+
+        </form>
     </div>
-    <img src="<?= BASEURI ?>/img/logo.svg" width="160" class="logo">
+</div>
+
+<div class="d-block w-100 text-secondary fixed-bottom p-2 text-center">
+    <span>Version 1.0.0</span> / <span>Auris Maciel</span> / <span class="text-primary">orb</span>
 </div>

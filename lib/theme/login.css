@@ -1,41 +1,12 @@
 body {
-    background: #eee !important;
+    background: #fff !important;
 }
 .box-login {
-    position: absolute;
-    width: 40%; height: 40%;
-    background: #fff;
-    top: 30%; left: 30%;
-    border-radius: 5px;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-}
-.box-login .form-input {
-    width: 40%;
-    height: 100%;
-    float: left;
-    background: linear-gradient(to right,#007bff, #0071f3);
-    border-radius: 5px 0px 0px 5px;
-    padding: 15px 20px;
-}
-.box-login .form-input label {
-    font-size: 0.8em;
-    color: white;
-}
-.box-login .logo {
-    margin-top: 50px;
-    margin-left: 14%;
-}
-.box-login .form-control {
-    background-color: rgba(0,0,0,0.2) !important;
-    border-color: rgba(0,0,0,0.2);
-    color: white;
-    border-radius: 10px;
-}
-.box-login .form-control:hover {
-    transition: linear .3s;
-    border-color: white;
-}
-.box-login .form-control:focus {
-    background-color: white !important;
-    color: black;
+    width: 400px;
+    height: auto;
+    padding: 30px;
+    border-radius: 4px;
+    border:solid 1px #eee;
+    margin: 0 auto;
+    margin-top: 5%;
 }
