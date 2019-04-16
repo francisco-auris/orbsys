@@ -1,7 +1,13 @@
 {
-    "system" : ["Login","Inicio"],
-    "modules" : {
-        "native" : ["Usuario","Permissao","Email"]
-    }
+    "system" : {
+        "model" : ["Estrutura"],
+        "controller" : ["Home","Studio","Login"]
+    },
+    "modules" : [
+        {
+            "name" : "Native",
+            "obj" : ["Teste"]
+        }
+    ]
 
 }

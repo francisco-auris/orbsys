@@ -13,7 +13,8 @@
                 C34.9,33.3,34.1,34,33.3,34z"/>
         </svg>
     </div>
-    <div class="name_user">AURIS MACIEL</div>
+    <div class="name_user">Studio</div>
+    <div class="name_object text-primary"></div>
 
     <div class="icon_logout">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -39,17 +40,17 @@
 </div>
 
 <div id="main">
-    MENU
-    <br><br>
-    <caption class="mb-3">Native</caption>
-    <ul class="main-module">
-        <li>
-            Administração
+    FERRAMENTAS
+    <br>
+    <ul class="main-module mt-2">
+        <li class="mt-2">
+            CAMPOS
             <ul>
-                <li>Usuários</li>
-                <li>Niveis</li>
-                <li>Conexão</li>
-                <li>Smtp</li>
+                <li>TEXTO</li>
+                <li>NÚMERO</li>
+                <li>DATA</li>
+                <li>HORA</li>
+                <li>LISTA OPÇÕES</li>
             </ul>
         </li>
         <li>
@@ -60,7 +61,7 @@
 
 <div id="content">
 
-    <div class="window" data-window="1">
+    <!--<div class="window" data-window="1">
         <div class="window-header">
             FORMULARIO DE TESTE 
             <div class="close-window">Fechar <div class="close" aria-label="Close"><span aria-hidden="true">&times;</span></div></div>
@@ -73,7 +74,7 @@
         <div class="window-body">
 
         </div>
-    </div>
+    </div>-->
 
     <!--<div class="window">
         <div class="window-header">USUÁRIOS</div>

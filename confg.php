@@ -10,3 +10,11 @@ define( "DB_HOST", "localhost" );
 define( "DB_USER", "root" );
 define( "DB_PSWD", "" );
 define( "DBASE", "orb" );
+
+define( 
+    "CONECTIONS", 
+    [
+        'label' => ['TESTE','PRODUÇÃO'], 
+        'value' => ['teste_001','prod_2019']
+    ]
+);

@@ -14,15 +14,18 @@
 
             <label>Conectar:</label>
             <select class="form-control">
-                <option value=""> -- Selecione --</option>
-                <option value="">MATRIZ</option>
+            <?php
+            for( $i = 0; $i < count(CONECTIONS['label']); $i++ ){
+                echo '<option value="'.CONECTIONS['value'][$i].'">'.CONECTIONS['label'][$i].'</option>';
+            }
+            ?>
             </select> 
 
             <button class="btn btn-primary mt-4">Entrar</button>
             <br>
 
             <input type="checkbox" class="mt-4 mr-2"><label>Lembrar-me usuário</label>
-
+    
         </form>
     </div>
 </div>
