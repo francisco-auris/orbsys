@@ -1,6 +1,6 @@
 {
     "system" : {
-        "model" : ["Estrutura"],
+        "model" : ["Estrutura","Conexao","Usuario"],
         "controller" : ["Home","Studio","Login"]
     },
     "modules" : [

@@ -18,5 +18,8 @@ if( !isset( $_SESSION[USR_LOGIN] ) )
 {
     $class = "System\\Controller\\Login";
 }
+else {
+    $class = "System\\Controller\\Home";
+}
 
 $var = new $class;

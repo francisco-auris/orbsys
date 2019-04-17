@@ -13,9 +13,10 @@
                 C34.9,33.3,34.1,34,33.3,34z"/>
         </svg>
     </div>
-    <div class="name_user">AURIS MACIEL</div>
+    <div class="name_user text-secondary"><?php echo strtoupper($_SESSION[USR_NOME]); ?></div>
+    <div class="name_object text-secondary"><?php echo strtoupper($_SESSION[USR_CONNECT]); ?></div>
 
-    <div class="icon_logout">
+    <div class="icon_logout" title="Sair" onclick="prepareLogout();">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
             <style type="text/css">

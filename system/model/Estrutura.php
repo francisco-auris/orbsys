@@ -5,7 +5,7 @@ class Estrutura {
 
     public static function requireView( $file ){
         if( file_exists( BASEROOT.'/system/view/'.$file ) ){
-            require_once BASEROOT.'/system/view/'.$file;
+            include_once BASEROOT.'/system/view/'.$file;
         }
         else {
             echo "View não encontrada [".BASEROOT.'/system/view/$file]'; exit;
@@ -52,6 +52,14 @@ class Estrutura {
         $render .= '</body>';
         $render .= '</html>';
         echo $render;
+    }
+
+    public static function renderAlert( $type, $texto ){
+        $render = '';
+        $render .= '<div class="alert alert-'.$type.'">';
+        $render .= $texto;
+        $render .= '</div>';
+        return $render;
     }
 
 
