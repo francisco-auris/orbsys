@@ -10,3 +10,13 @@ body {
     margin: 0 auto;
     margin-top: 7%;
 }
+
+@media only screen and ( max-width: 700px ){
+
+    .box-login {
+        border-color: transparent;
+        width: 100%;
+        margin-top: 0;
+    }
+
+}

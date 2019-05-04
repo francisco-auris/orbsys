@@ -21,6 +21,7 @@ class Estrutura {
         $render .= '    <meta charset="utf-8">';
         $render .= '    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">';
         $render .= '    <link rel="stylesheet" href="'.BASEURI.'lib/bootstrap/css/bootstrap.min.css">';
+        $render .= '    <link rel="stylesheet" href="'.BASEURI.'lib/theme/icones.css">';
         if( $style != null ){
             for( $i=0; $i < count($style); $i++ ){
                 $render .= '<link rel="stylesheet" href="'.$style[$i].'" />';

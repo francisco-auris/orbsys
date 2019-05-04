@@ -10,6 +10,17 @@ function Effect(){
         }, 150);
     }
 
+    this.minimizeWindow = function( dataWindow ){
+        console.log('Minimize window ==> '+dataWindow);
+        $('[data-window='+dataWindow+'] .window-body').animate({
+            height: '0%'
+        }, 150);
+        $('[data-window='+dataWindow+']').animate({
+            height: '40px'
+        }, 150);
+    }
+
+
 
 }
 
